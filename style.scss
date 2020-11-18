@@ -85,60 +85,62 @@ header {
             }
         }
 
-        .hamburgerLinks {
-            display: none;
-            position: absolute;
-            right: 8px;
-            z-index: 1;
-            min-width: 160px;
-            box-shadow: 1px 1px 4px #000;
-            text-align: center;
-            background-color: #4f4039d7;
+        
+    }
+}
 
-            a {
-                display: block;
-                padding: 10px 25px;
-                color: #ffffffa1;
+.hamburgerLinks {
+    display: none;
+    position: absolute;
+    right: 8px;
+    z-index: 1;
+    min-width: 160px;
+    box-shadow: 1px 1px 4px #000;
+    text-align: center;
+    background-color: #4f4039d7;
 
-                &:hover {
-                    background-color: #fff;
-                    color: #000;
+    a {
+        display: block;
+        padding: 10px 25px;
+        color: #ffffffa1;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+
+    }
+
+    @include for-tablet-landscape-up {
+        display: block;
+        position: unset;
+        min-width: unset;
+        box-shadow: unset;
+        background-color: transparent;
+        margin-top: 20px;
+
+        a {
+            display: inline-block;
+            font-size: 19px;
+
+            &:hover {
+                background-color: unset;
+                color: #fff;
+
+                &::after {
+                    width: 100%;
                 }
-
-
             }
 
-            @include for-tablet-landscape-up {
+            &::after {
+                content: "";
                 display: block;
-                position: unset;
-                min-width: unset;
-                box-shadow: unset;
-                background-color: transparent;
-                margin-top: 20px;
-
-                a {
-                    display: inline-block;
-                    font-size: 19px;
-
-                    &:hover {
-                        background-color: unset;
-                        color: #fff;
-
-                        &::after {
-                            width: 100%;
-                        }
-                    }
-
-                    &::after {
-                        content: "";
-                        display: block;
-                        width: 0;
-                        height: 2px;
-                        background: #000;
-                        transition: width .2s ease-in;
-                        margin-top: 3px;
-                    }
-                }
+                width: 0;
+                height: 2px;
+                background: #000;
+                transition: width .2s ease-in;
+                margin-top: 3px;
             }
         }
     }
@@ -185,4 +187,8 @@ img {
     position: absolute;
     top: -2000px;
     right: -2000px;
+}
+
+.active{
+    display: block;
 }

@@ -1,9 +1,12 @@
-let openMenu = () => {
-    let content = document.querySelector('.hamburgerLinks');
+const content = document.querySelector('.hamburgerLinks');
+const nav = document.querySelector('nav');
 
-    if (content.style.display === 'block') {
-            content.style.display = 'none'
-    }else {
-        content.style.display = 'block';
+function toggleMenu(e) {
+    if (e.target.nodeName === 'SPAN' && !content.classList.contains('active'))
+        content.classList.add('active');
+    else if (content.classList.contains('active')) {
+        content.classList.remove('active');
     }
 }
+
+document.body.addEventListener('click', toggleMenu);

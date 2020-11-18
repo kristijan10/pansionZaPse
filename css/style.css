@@ -16,17 +16,17 @@ header nav .hamburgerIcon { display: block; font-size: 22px; margin: 20px 10px 0
 
 @media (min-width: 900px) { header nav .hamburgerIcon { display: none; } }
 
-header nav .hamburgerLinks { display: none; position: absolute; right: 8px; z-index: 1; min-width: 160px; -webkit-box-shadow: 1px 1px 4px #000; box-shadow: 1px 1px 4px #000; text-align: center; background-color: #4f4039d7; }
+.hamburgerLinks { display: none; position: absolute; right: 8px; z-index: 1; min-width: 160px; -webkit-box-shadow: 1px 1px 4px #000; box-shadow: 1px 1px 4px #000; text-align: center; background-color: #4f4039d7; }
 
-header nav .hamburgerLinks a { display: block; padding: 10px 25px; color: #ffffffa1; }
+.hamburgerLinks a { display: block; padding: 10px 25px; color: #ffffffa1; }
 
-header nav .hamburgerLinks a:hover { background-color: #fff; color: #000; }
+.hamburgerLinks a:hover { background-color: #fff; color: #000; }
 
-@media (min-width: 900px) { header nav .hamburgerLinks { display: block; position: unset; min-width: unset; -webkit-box-shadow: unset; box-shadow: unset; background-color: transparent; margin-top: 20px; }
-  header nav .hamburgerLinks a { display: inline-block; font-size: 19px; }
-  header nav .hamburgerLinks a:hover { background-color: unset; color: #fff; }
-  header nav .hamburgerLinks a:hover::after { width: 100%; }
-  header nav .hamburgerLinks a::after { content: ""; display: block; width: 0; height: 2px; background: #000; -webkit-transition: width .2s ease-in; transition: width .2s ease-in; margin-top: 3px; } }
+@media (min-width: 900px) { .hamburgerLinks { display: block; position: unset; min-width: unset; -webkit-box-shadow: unset; box-shadow: unset; background-color: transparent; margin-top: 20px; }
+  .hamburgerLinks a { display: inline-block; font-size: 19px; }
+  .hamburgerLinks a:hover { background-color: unset; color: #fff; }
+  .hamburgerLinks a:hover::after { width: 100%; }
+  .hamburgerLinks a::after { content: ""; display: block; width: 0; height: 2px; background: #000; -webkit-transition: width .2s ease-in; transition: width .2s ease-in; margin-top: 3px; } }
 
 #usluge { height: 300px; }
 
@@ -39,3 +39,5 @@ a { text-decoration: none; }
 img { width: 100%; height: auto; display: block; }
 
 .getRidOf { position: absolute; top: -2000px; right: -2000px; }
+
+.active { display: block; }
