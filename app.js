@@ -1,5 +1,5 @@
 let openMenu = () => {
-    let content = document.querySelector('.links');
+    let content = document.querySelector('.hamburgerLinks');
 
     if (content.style.display === 'block') {
             content.style.display = 'none'
