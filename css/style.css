@@ -6,9 +6,9 @@ body { background-color: #fff; line-height: 1.4; font-size: 16px; color: #000; }
 
 header { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 10px 10px 0 10px; background-color: #0087a1; }
 
-header img { width: 60px; height: 70px; }
+header img { width: 80px; height: 100px; }
 
-@media (min-width: 900px) { header img { width: 80px; height: 90px; } }
+@media (min-width: 900px) { header img { width: 90px; height: 110px; } }
 
 header nav { position: relative; cursor: pointer; height: 0; }
 
@@ -22,7 +22,7 @@ header nav .hamburgerIcon { display: block; font-size: 22px; margin: 20px 10px 0
 
 .hamburgerLinks a:hover { background-color: #fff; color: #000; }
 
-@media (min-width: 900px) { .hamburgerLinks { display: block; position: unset; min-width: unset; -webkit-box-shadow: unset; box-shadow: unset; background-color: transparent; margin-top: 20px; }
+@media (min-width: 900px) { .hamburgerLinks { display: block; position: unset; min-width: unset; -webkit-box-shadow: unset; box-shadow: unset; background-color: transparent; margin-top: 25px; }
   .hamburgerLinks a { display: inline-block; font-size: 19px; }
   .hamburgerLinks a:hover { background-color: unset; color: #fff; }
   .hamburgerLinks a:hover::after { width: 100%; }
@@ -30,9 +30,39 @@ header nav .hamburgerIcon { display: block; font-size: 22px; margin: 20px 10px 0
 
 #usluge { height: 300px; }
 
-#smestaj { height: 300px; }
+#smestaj .container { width: 600px; margin: 0 auto; }
 
-footer { height: 300px; background-color: #333; }
+#smestaj .grid3 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+
+#smestaj .grid3 div { width: 140px; height: 170px; }
+
+#smestaj .grid3 div img { width: 100%; }
+
+.footer { background-color: #947c4c; position: relative; height: 125px; overflow: hidden; }
+
+@media (min-width: 900px) { .footer { height: 145px; } }
+
+.footer__container { width: 100%; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+@media (min-width: 600px) { .footer__container { width: 600px; } }
+
+.footer__container img { width: 90px; height: 110px; }
+
+@media (min-width: 900px) { .footer__container img { width: 110px; height: 130px; } }
+
+.footer__container .tekst { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-left: 20px; color: #ffffff; padding-top: 5px; }
+
+.footer__container .tekst span { margin-top: 3px; }
+
+.footer__container .tekst a { font-size: 20px; color: #ffffff; }
+
+.footer__container .tekst a:hover::after { width: 100%; }
+
+.footer__container .tekst a::after { content: ""; display: block; width: 0; height: 2px; background: #000; -webkit-transition: width .2s ease-in; transition: width .2s ease-in; }
+
+@media (min-width: 900px) { .footer__container .tekst { margin-left: 35px; } }
+
+.footer small { font-size: 12px; color: #ddd; position: absolute; right: 0; bottom: 0; }
 
 a { text-decoration: none; }
 
