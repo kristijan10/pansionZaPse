@@ -38,6 +38,10 @@ a { text-decoration: none; }
 
 img { width: 100%; height: auto; display: block; }
 
-.getRidOf { position: absolute; top: -2000px; right: -2000px; }
+.getRidOf { position: absolute; top: -9999px; right: -9999px; }
+
+#preload-01 { background: url(/img/hero/heroImg-compressed.jpg) no-repeat -9999px -9999px; }
+
+#preload-02 { background: url(/img/hero/heroImg2-compressed.jpeg) no-repeat -9999px -9999px; }
 
 .active { display: block; }
