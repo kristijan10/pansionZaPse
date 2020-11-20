@@ -6,13 +6,13 @@ body { background-color: #fff; line-height: 1.4; font-size: 16px; color: #000; }
 
 header { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 10px 10px 0 10px; background-color: #0087a1; }
 
-header img { width: 80px; height: 100px; }
+header img { width: 70px; height: 90px; }
 
 @media (min-width: 900px) { header img { width: 90px; height: 110px; } }
 
 header nav { position: relative; cursor: pointer; height: 0; }
 
-header nav .hamburgerIcon { display: block; font-size: 22px; margin: 20px 10px 0 0; }
+header nav .hamburgerIcon { display: block; font-size: 22px; margin: 27px 10px 0 0; }
 
 @media (min-width: 900px) { header nav .hamburgerIcon { display: none; } }
 
@@ -30,13 +30,7 @@ header nav .hamburgerIcon { display: block; font-size: 22px; margin: 20px 10px 0
 
 #usluge { height: 300px; }
 
-#smestaj .container { width: 600px; margin: 0 auto; }
-
-#smestaj .grid3 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
-
-#smestaj .grid3 div { width: 140px; height: 170px; }
-
-#smestaj .grid3 div img { width: 100%; }
+#smestaj { height: 300px; }
 
 .footer { background-color: #947c4c; position: relative; height: 125px; overflow: hidden; }
 
@@ -46,7 +40,7 @@ header nav .hamburgerIcon { display: block; font-size: 22px; margin: 20px 10px 0
 
 @media (min-width: 600px) { .footer__container { width: 600px; } }
 
-.footer__container img { width: 90px; height: 110px; }
+.footer__container img { width: 80px; height: 100px; }
 
 @media (min-width: 900px) { .footer__container img { width: 110px; height: 130px; } }
 

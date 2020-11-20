@@ -61,8 +61,8 @@ header {
     background-color: #0087a1;
 
     img {
-        width: 80px;
-        height: 100px;
+        width: 70px;
+        height: 90px;
 
         @include for-tablet-landscape-up {
             width: 90px;
@@ -78,7 +78,7 @@ header {
         .hamburgerIcon {
             display: block;
             font-size: 22px;
-            margin: 20px 10px 0 0;
+            margin: 27px 10px 0 0;
 
             @include for-tablet-landscape-up {
                 display: none;
@@ -180,8 +180,8 @@ header {
         }
 
         img {
-            width: 90px;
-            height: 110px;
+            width: 80px;
+            height: 100px;
 
             @include for-tablet-landscape-up {
                 width: 110px;
