@@ -148,12 +148,83 @@ header {
 
 // Header END
 
-#usluge {
-    height: 300px;
+.usluge {
+    margin: 10px 0;
+
+    h2 {
+        text-decoration: underline 2px;
+        text-align: center;
+    }
+
+    &__tekst {
+        padding: 0 0 0 12px;
+        margin: 0 auto;
+
+        ul {
+            list-style-type: "-";
+
+            li {
+                margin-top: 3px;
+            }
+        }
+
+        .firstUl {
+            font-weight: bold;
+        }
+
+        .podUl {
+            padding-left: 20px;
+        }
+
+        .holder1 {
+            margin: 20px auto 0 auto;
+        }
+
+        .middleUl p {
+            font-weight: bold;
+
+            &::before {
+                content: "-";
+                margin: 0 2px 0 -8px;
+            }
+        }
+
+        .holder2 {
+            margin-top: 30px;
+        }
+    }
+
+    .container {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 750px) {
+    .holder1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & div:first-of-type {
+            width: 230px;
+        }
+
+        & div:last-of-type {
+            width: 300px;
+        }
+
+        div {
+            background-color: rgba(243, 212, 194, 0.301);
+            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 0 3px 0 0;
+        }
+    }
 }
 
 #smestaj {
-
     .flex {
         div {
             margin: 3px;
@@ -166,6 +237,8 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 920px;
+        margin: 0 auto;
     }
 
     .flex img {
