@@ -173,11 +173,17 @@ header {
         }
 
         .podUl {
-            padding-left: 20px;
+            margin-left: 15px;
+            text-align: left;
         }
 
         .holder1 {
-            margin: 20px auto 0 auto;
+            margin: 15px auto 0 auto;
+            max-width: 350px;
+            font-size: 17px;
+            background-color: rgba(243, 212, 194, 0.301);
+            border-radius: 20px;
+            padding: 10px;
         }
 
         .middleUl p {
@@ -205,6 +211,11 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        max-width: unset !important;
+        text-align: unset !important;
+        background-color: unset !important;
+        border-radius: unset !important;
+        padding: unset !important;
 
         & div:first-of-type {
             width: 230px;
