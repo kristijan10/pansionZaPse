@@ -181,7 +181,7 @@ header {
             margin: 15px auto 0 auto;
             max-width: 350px;
             font-size: 17px;
-            background-color: rgba(243, 212, 194, 0.301);
+            // background-color: #f9ad5c1f;
             border-radius: 20px;
             padding: 10px;
         }
@@ -196,14 +196,18 @@ header {
         }
 
         .holder2 {
-            margin-top: 30px;
+            margin: 30px auto 30px auto;
+            max-width: 350px;
+            background-color: rgba(243, 212, 194, 0.301);
+            border-radius: 20px;
+            padding: 10px;
         }
     }
+}
 
-    .container {
-        max-width: 920px;
-        margin: 0 auto;
-    }
+.container {
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 @media all and (min-width: 750px) {
@@ -226,7 +230,7 @@ header {
         }
 
         div {
-            background-color: rgba(243, 212, 194, 0.301);
+            // background-color: rgba(243, 212, 194, 0.301);
             border-radius: 20px;
             padding: 10px;
             border: 1px solid black;
@@ -257,8 +261,37 @@ header {
     }
 }
 
+.kontakt {
+    text-align: center;
+    margin: 30px auto;
+    background-color: #bb4530ad;
+    padding: 10px;
+    border-radius: 20px;
+
+    a {
+        border: 1px solid #291F1E;
+        color: #000;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 30px;
+        display: inline-block;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #291F1E;
+            color: #fff;
+        }
+    }
+}
+
+@media all and (min-width: 750px) {
+    .kontakt {
+        max-width: 920px;
+    }
+}
+
 .footer {
-    background-color: #947c4c;
+    background-color: #291F1E;
     position: relative;
     height: 125px;
     overflow: hidden;
@@ -315,7 +348,7 @@ header {
                     display: block;
                     width: 0;
                     height: 2px;
-                    background: #000;
+                    background: #ccc;
                     transition: width .2s ease-in;
                 }
             }
