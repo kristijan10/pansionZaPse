@@ -196,7 +196,7 @@ header {
         }
 
         .holder2 {
-            margin: 30px auto 30px auto;
+            margin: 30px auto 15px auto;
             max-width: 350px;
             background-color: rgba(243, 212, 194, 0.301);
             border-radius: 20px;
@@ -268,19 +268,30 @@ header {
     padding: 10px;
     border-radius: 20px;
 
-    a {
-        border: 1px solid #291F1E;
-        color: #000;
-        border-radius: 5px;
-        padding: 10px;
+    .btn {
         margin-top: 30px;
-        display: inline-block;
-        font-size: 20px;
+    }
+}
 
-        &:hover {
-            background-color: #291F1E;
-            color: #fff;
-        }
+.holder2+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid #291F1E;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 20px;
+
+    &:hover {
+        background-color: #291F1E;
+        color: #fff;
     }
 }
 
