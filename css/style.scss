@@ -197,11 +197,11 @@ header {
 
         .holder2 {
             margin: 30px auto 15px auto;
-            max-width: 350px;
             background-color: #bb4530ad;
             border-radius: 20px;
             padding: 10px;
-            color: #ffffff;
+            text-align: center;
+            max-width: 350px;
         }
     }
 }
@@ -243,6 +243,10 @@ header {
             // border: 1px solid black;
             margin-right: 3px;
         }
+    }
+
+    .holder2 {
+        max-width: unset !important;
     }
 }
 
