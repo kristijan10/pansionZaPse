@@ -36,6 +36,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none !important;
+}
+
 html,
 body {
     width: 100%;
@@ -184,23 +188,20 @@ header {
             // background-color: #f9ad5c1f;
             border-radius: 20px;
             padding: 10px;
+            background-color: #bb453094;
         }
 
         .middleUl p {
             font-weight: bold;
-
-            &::before {
-                content: "-";
-                margin: 0 2px 0 -8px;
-            }
         }
 
         .holder2 {
             margin: 30px auto 15px auto;
             max-width: 350px;
-            background-color: rgba(243, 212, 194, 0.301);
+            background-color: #bb4530ad;
             border-radius: 20px;
             padding: 10px;
+            color: #ffffff;
         }
     }
 }
@@ -222,19 +223,25 @@ header {
         padding: unset !important;
 
         & div:first-of-type {
-            width: 230px;
+            width: 235px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         & div:last-of-type {
             width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         div {
-            // background-color: rgba(243, 212, 194, 0.301);
+            background-color: #bb453094;
             border-radius: 20px;
             padding: 10px;
-            border: 1px solid black;
-            margin: 0 3px 0 0;
+            // border: 1px solid black;
+            margin-right: 3px;
         }
     }
 }
@@ -378,8 +385,6 @@ header {
         bottom: 0;
     }
 }
-
-
 
 
 
