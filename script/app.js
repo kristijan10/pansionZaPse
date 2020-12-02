@@ -29,11 +29,13 @@ document.body.addEventListener('click', toggleMenu);
             var positionFromTop = elements[i].getBoundingClientRect().top;
 
             if (positionFromTop - windowHeight <= 0 && element.classList.contains('animate__animated')) {
-                element.classList.add('animate__slideInLeft');
-                element.classList.remove('hidden');
+                element.className = element.className.replace('hidden', 'animate__slideInLeft');
+                //element.classList.add('animate__slideInLeft');
+                //element.classList.remove('hidden');
             } else if (positionFromTop - windowHeight <= 0) {
-                element.classList.add('fade-in');
-                element.classList.remove('hidden');
+                element.className = element.className.replace('hidden', 'fade-in');
+                //element.classList.add('fade-in');
+                //element.classList.remove('hidden');
             }
         }
     }
@@ -43,4 +45,4 @@ document.body.addEventListener('click', toggleMenu);
 
     init();
     checkPosition();
-})();
+})()
