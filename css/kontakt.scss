@@ -1,0 +1,92 @@
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 145px;
+}
+
+header {
+    background-color: unset;
+    // position: relative;
+    padding-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+    //Linija ispod header
+    /*&::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }*/
+
+    .hamburgerLinks a {
+        @include for-tablet-landscape-up {
+            color: #000;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+.holder {
+    margin: 30px auto;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 20px;
+
+    @include for-tablet-landscape-up {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        padding: 20px 0 0 0;
+
+        div:first-child {
+            margin-bottom: 15px;
+        }
+
+        div>span>a>i {
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }
+
+    .secound {
+
+        div:first-child {
+            margin-bottom: 15px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
