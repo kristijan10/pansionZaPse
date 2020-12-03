@@ -70,14 +70,14 @@
                 </div>
             </div>
         </div>
-        <div class="secound">
-            <div>
+        <div class="second">
+            <div class="adresa">
                 Lipovačka 36,
                 Jakovo, Beograd 11276
             </div>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.7230552570866!2d20.262855758283525!3d44.758672899355254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6bdbfb61a4ed%3A0x50316f1446993f06!2zTGlwb3ZhxI1rYSwg0IjQsNC60L7QstC-!5e1!3m2!1ssr!2srs!4v1606994731078!5m2!1ssr!2srs"></iframe>
+            <div class="mapHolder">
+                <div id="map">
+                </div>
             </div>
         </div>
     </div>
@@ -98,6 +98,12 @@
         </div>
         <small>&copy;2020. Simba d.o.o.</small>
     </footer>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAc5han7ESCdUm_efxTaHaX3W7Yha-_I8&callback=initMap">
+    </script>
 
     <script src="../script/app.js"></script>
 </body>

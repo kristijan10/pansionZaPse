@@ -121,7 +121,7 @@ header {
         }
     }
 
-    .secound {
+    .second {
         @include for-tablet-landscape-up {
             display: flex;
             flex-direction: column;
@@ -129,25 +129,14 @@ header {
             margin-top: 30px;
         }
 
-        div:first-child {
+        .adresa {
             margin-bottom: 15px;
         }
 
-        div:last-child {
-
-
-            &hover body {
-                opacity: .4;
-            }
-        }
-
-        iframe {
-            border: none;
-            outline: none;
-            min-width: 100%;
+        .mapHolder {
             height: 500px;
 
-            @include for-tablet-landscape-up {
+            /*@include for-tablet-landscape-up {
                 height: 400px;
 
                 &:hover {
@@ -160,8 +149,6 @@ header {
                     height: 50%;
                     margin: 0 auto;
                 }
-
-
             }
 
             @include for-desktop-up {
@@ -169,12 +156,10 @@ header {
                     transform: scale(1.2);
                 }
             }
+
+            */
         }
     }
-}
-
-html:contains-selector(iframe:hover) {
-    background: black;
 }
 
 .footer {
@@ -182,6 +167,10 @@ html:contains-selector(iframe:hover) {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+#map {
+    height: 100%;
 }
 
 
