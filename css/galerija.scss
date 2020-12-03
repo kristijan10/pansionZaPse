@@ -30,3 +30,54 @@ header {
         }
     }
 }
+
+.carousel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+
+    .holder {
+        margin: 0 auto;
+        width: 100%;
+
+        @include for-tablet-landscape-up {
+            max-width: 80%;
+        }
+    }
+
+    .picture {
+        height: 400px;
+        width: 100%;
+        background-color: #000;
+    }
+
+    .pictures {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 5px;
+
+        div {
+            height: 35px;
+            width: 32px;
+            background-color: #000;
+            margin-right: 3px;
+        }
+    }
+
+    .nav {
+        text-align: center;
+        margin-top: 15px;
+
+        i {
+            cursor: pointer;
+            font-size: 25px;
+
+            &:first-child {
+                margin-right: 8px;
+            }
+        }
+    }
+}

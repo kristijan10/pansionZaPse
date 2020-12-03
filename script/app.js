@@ -52,3 +52,13 @@ document.body.addEventListener('click', toggleMenu);
 
 
 //GALERIJA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+let previousPicture = document.querySelector('#prev');
+let nextPicture = document.querySelector('#next');
+
+previousPicture.addEventListener('click', () => {
+    console.log("1");
+})
+
+nextPicture.addEventListener('click', () => {
+    console.log("2");
+})
