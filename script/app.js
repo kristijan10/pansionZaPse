@@ -91,3 +91,8 @@ function initMap() {
         infoWindow.open(map, marker);
     });
 }
+
+let mapa = document.querySelector('.mapHolder');
+mapa.addEventListener('mouseover', () => {
+    document.body.style.backgroundColor = 'black';
+})
