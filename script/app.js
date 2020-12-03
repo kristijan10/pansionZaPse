@@ -1,3 +1,4 @@
+// Hamburger menu
 const content = document.querySelector('.hamburgerLinks');
 const nav = document.querySelector('nav');
 
@@ -12,8 +13,8 @@ function toggleMenu(e) {
 document.body.addEventListener('click', toggleMenu);
 
 
-// Functija za animaciju
-// Kada je visina browsera na elementu, doda mu se klasa, a i ukloni
+// Funkcija za animaciju
+// Kada je visina browsera na elementu, zamene se klase
 (function () {
     var elements;
     var windowHeight;
@@ -46,3 +47,8 @@ document.body.addEventListener('click', toggleMenu);
     init();
     checkPosition();
 })()
+
+
+
+
+//GALERIJA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

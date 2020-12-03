@@ -1,0 +1,32 @@
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+header {
+    background-color: unset;
+    position: relative;
+
+    //Linija ispod header
+    /*&::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }*/
+
+    .hamburgerLinks a {
+        @include for-tablet-landscape-up {
+            color: #000;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
