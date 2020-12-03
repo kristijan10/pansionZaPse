@@ -65,3 +65,7 @@ nextPicture.addEventListener('click', () => {
 
 
 // KONTAKT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+let map = document.querySelector('iframe');
+map.addEventListener('mouseover', () => {
+    document.body.style.backgroundColor = 'black';
+})
