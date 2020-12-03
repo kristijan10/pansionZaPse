@@ -62,3 +62,6 @@ previousPicture.addEventListener('click', () => {
 nextPicture.addEventListener('click', () => {
     console.log("2");
 })
+
+
+// KONTAKT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
