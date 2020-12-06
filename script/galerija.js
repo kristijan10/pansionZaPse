@@ -46,10 +46,10 @@ function handleTouchMove(evt) {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0) {
             /* left swipe */
-            plusSlide(1);
+            plusSlide(-1);
         } else {
             /* right swipe */
-            plusSlide(-1);
+            plusSlide(1);
         }
     } else {
         if (yDiff > 0) {
