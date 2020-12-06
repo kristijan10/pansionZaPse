@@ -7,16 +7,12 @@ function plusSlide(n) {
 
 function showSlide(n) {
     const pictures = document.getElementsByClassName('picture');
-    const dots = document.getElementsByClassName('dot');
 
     if (n > pictures.length) slideIndex = 1;
     if (n < 1) slideIndex = pictures.length;
     for (let i = 0; i < pictures.length; i++)
         pictures[i].style.display = 'none';
-    for (let i = 0; i < dots.length; i++)
-        dots[i].className = dots[i].className.replace(' active', '');
     pictures[slideIndex - 1].style.display = 'block';
-    dots[slideIndex - 1].className += ' active';
 }
 
 document.addEventListener('touchstart', handleTouchStart, false);
