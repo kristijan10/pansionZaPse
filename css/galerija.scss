@@ -6,19 +6,9 @@
 
 header {
     background-color: unset;
-    // position: relative;
-
-    //Linija ispod header
-    /*&::after {
-        content: "";
-        width: 100%;
-        height: 1px;
-        background-color: #000;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }*/
+    padding-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
     .hamburgerLinks a {
         @include for-tablet-landscape-up {
@@ -31,53 +21,78 @@ header {
     }
 }
 
-.carousel {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 30px;
-
-    .holder {
-        margin: 0 auto;
-        width: 100%;
-
-        @include for-tablet-landscape-up {
-            max-width: 80%;
-        }
-    }
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 30px auto;
 
     .picture {
-        height: 400px;
-        width: 100%;
-        background-color: #000;
-    }
+        display: none;
 
-    .pictures {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        margin-top: 5px;
-
-        div {
-            height: 35px;
-            width: 32px;
-            background-color: #000;
-            margin-right: 3px;
+        img {
+            height: 100%;
         }
     }
 
-    .nav {
-        text-align: center;
-        margin-top: 15px;
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 16px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 18px;
+        transition: .6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
 
-        i {
-            cursor: pointer;
-            font-size: 25px;
+        &:hover {
+            background: rgba(0, 0, 0, .5);
+        }
+    }
 
-            &:first-child {
-                margin-right: 8px;
-            }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .numbertext {
+        color: #f2f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color .6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .8
+        }
+
+        to {
+            opacity: 1
         }
     }
 }
