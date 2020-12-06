@@ -29,7 +29,7 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 // GLOBAL STYLES
 * {
@@ -53,6 +53,7 @@ body {
     line-height: 1.4;
     font-size: 16px;
     color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -160,6 +161,10 @@ header {
     h2 {
         text-decoration: underline 2px;
         text-align: center;
+        font-family: 'Montserrat',
+            sans-serif;
+        font-size: 28px;
+        margin-bottom: 28px;
     }
 
     &__tekst {
@@ -167,8 +172,6 @@ header {
         margin: 0 auto;
 
         ul {
-            list-style-type: "-";
-
             li {
                 margin-top: 3px;
             }
@@ -280,8 +283,6 @@ header {
     background-color: #bb4530ad;
     padding: 10px;
     border-radius: 20px;
-    font-family: 'Do Hyeon',
-        sans-serif;
 
     .btn {
         margin-top: 30px;
