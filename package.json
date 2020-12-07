@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Pansion za pse \"Simba\" projekat",
+  "main": "/script/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristijan10/pansionZaPse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristijan10/pansionZaPse/issues"
+  },
+  "homepage": "https://github.com/kristijan10/pansionZaPse#readme"
+}
