@@ -1,5 +1,5 @@
 {
-  "name": "pansionZaPse",
+  "name": "package",
   "version": "1.0.0",
   "description": "Pansion za pse \"Simba\" projekat",
   "main": "/script/app.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kristijan10/pansionZaPse/issues"
   },
-  "homepage": "https://github.com/kristijan10/pansionZaPse#readme"
+  "homepage": "https://github.com/kristijan10/pansionZaPse#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
