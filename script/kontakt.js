@@ -15,12 +15,4 @@ function initMap() {
         },
         map: map
     });
-
-    let infoWindow = new google.maps.InfoWindow({
-        content: '<h2>Pansion "Simba"</h2>'
-    });
-
-    marker.addListener('mouseover', function () {
-        infoWindow.open(map, marker);
-    });
 }
