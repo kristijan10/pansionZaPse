@@ -1,139 +1,137 @@
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) {
-        @content;
-    }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 
 @mixin for-desktop-up {
-    @media (min-width: 1200px) {
-        @content;
-    }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 
-
-
 header {
-    background-color: unset;
-    padding-bottom: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  background-color: unset;
+  padding-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
-    .hamburgerLinks a {
-        @include for-tablet-landscape-up {
-            color: #000;
+  .hamburgerLinks a {
+    @include for-tablet-landscape-up {
+      color: #000;
 
-            &:hover {
-                color: #000;
-            }
-        }
+      &:hover {
+        color: #000;
+      }
     }
+  }
 }
 
 .holder {
-    margin: 30px auto;
-    max-width: 1200px;
-    text-align: center;
-    font-size: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  text-align: center;
+  font-size: 20px;
+
+  @include for-tablet-landscape-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    height: 67vh;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 20px 0 0 0;
 
     @include for-tablet-landscape-up {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-size: 23px;
-        height: 67vh;
+      margin: 0 80px 0 0;
+      padding: unset;
+      justify-content: center;
     }
 
-    .first {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-        padding: 20px 0 0 0;
-
-        @include for-tablet-landscape-up {
-            margin: 0 80px 0 0;
-            padding: unset;
-            justify-content: center;
-        }
-
-        @include for-desktop-up {
-            margin-right: 200px;
-        }
-
-        div:first-child {
-            margin-bottom: 15px;
-
-            @include for-tablet-landscape-up {
-                margin-bottom: 50px;
-            }
-
-            a {
-                display: inline-block;
-                font-weight: bold;
-                font-size: 24px;
-
-                &:hover {
-                    &::after {
-                        width: 100%;
-                    }
-                }
-
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 0;
-                    height: 2px;
-                    background: #000;
-                    transition: width .2s ease-in;
-                    margin-top: 3px;
-                }
-            }
-        }
-
-        div>span>a>i {
-            font-size: 25px;
-            margin-right: 10px;
-
-            &:hover {
-                color: #000;
-                transform: scale(1.3, 1.3);
-            }
-        }
+    @include for-desktop-up {
+      margin-right: 200px;
     }
 
-    .second {
-        @include for-tablet-landscape-up {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 30px;
+    div:first-child {
+      margin-bottom: 15px;
+
+      @include for-tablet-landscape-up {
+        margin-bottom: 50px;
+      }
+
+      a {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 24px;
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
         }
 
-        .adresa {
-            margin-bottom: 15px;
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background: #000;
+          transition: width 0.2s ease-in;
+          margin-top: 3px;
         }
-
-        .mapHolder {
-            height: 500px;
-
-            @include for-tablet-landscape-up {
-                height: 400px;
-
-                &:hover {
-                    position: fixed;
-                    z-index: 2;
-                    left: 0;
-                    top: 25%;
-                    right: 0;
-                    width: 100%;
-                    height: 50%;
-                    margin: 0 auto;
-                }
-            }
-        }
+      }
     }
+
+    div > span > a > i {
+      font-size: 25px;
+      margin-right: 10px;
+
+      &:hover {
+        color: #000;
+        transform: scale(1.3, 1.3);
+      }
+    }
+  }
+
+  .second {
+    @include for-tablet-landscape-up {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .adresa {
+      margin-bottom: 15px;
+    }
+
+    .mapHolder {
+      height: 500px;
+
+      @include for-tablet-landscape-up {
+        height: 400px;
+
+        &:hover {
+          position: fixed;
+          z-index: 2;
+          left: 0;
+          top: 25%;
+          right: 0;
+          width: 100%;
+          height: 50%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
 
 #map {
-    height: 100%;
+  height: 100%;
 }
